@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "src/**/*.ts"
+  ],
+  "exec": "ts-node -r dotenv/config -r module-alias/register  src/index.ts ",
+  "ext": "js ts",
+  "events": {
+    "start": "tsc ",
+    "restart": "tsc "
+  }
+}

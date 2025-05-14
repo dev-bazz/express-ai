@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@model/*": [
+        "src/model/*"
+      ],
+      "@middleware/*": [
+        "src/middleware/*"
+      ],
+    },
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+  }
+}
