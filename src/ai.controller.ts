@@ -2,9 +2,7 @@ import type { Handler } from 'express';
 import { streamText } from 'ai';
 import { createOllama } from 'ollama-ai-provider';
 export const handleAi: Handler = async (req, res) => {
-	const ollama = createOllama({
-		baseURL: 'http://127.0.0.1:8282/api',
-	});
+	const ollama = createOllama({});
 	const model = ollama('gemma3:1b', {});
 	const prompt = req.query.prompt as string;
 	const { textStream, toTextStreamResponse } = await streamText({
