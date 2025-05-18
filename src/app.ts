@@ -4,6 +4,5 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors());
-
 app.get('/', handleAi);
 export default app;

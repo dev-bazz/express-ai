@@ -3,7 +3,7 @@ import type { Application } from 'express';
 import http from 'node:http';
 
 const MAX_PORT_RETRIES = 10;
-const DEFAULT_PORT = 3000;
+const DEFAULT_PORT = 3002;
 
 const startServer = async (
 	port: number,
